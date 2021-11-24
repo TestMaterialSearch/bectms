@@ -1,0 +1,21 @@
+using System;
+class Example
+{
+	public it Swap(int a,int b)
+	{
+		int temp=a;
+		a=b;
+		b=temp;
+	}
+}
+class MainExample
+{
+	static void Main()
+	{
+		int n1=10,n2=20;
+		Example e=new Example();
+		Console.WriteLine("Before Swapping :/nn1="+n1+"/tn2="+n2);
+		e.swap(n1,n2);
+		Console.WriteLine("After Swapping :/nn1="+n1+"/tn2="+n2);
+	}
+}
