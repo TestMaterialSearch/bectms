@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EKLX2X1SS0"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-EKLX2X1SS0');
+        </script>
+		
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-FZ40F2DPXS"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-FZ40F2DPXS');
+		</script>
+		<title>
+			BecTestMaterialSearch
+		</title>
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap" rel="stylesheet">
+		<style>
+			body
+			{
+				background-image:url(bgimg.jpg);
+				background-attachment: fixed;
+				background-size: cover;
+				background-repeat:no-repeat;
+			}
+			#main
+			{
+				margin-left:10%;
+				margin-right:10%;
+			}
+			#content
+			{
+				background-color:black;
+				height: 1100px;
+				opacity:0.7;
+				color:white;
+				font-size:19px;
+				margin-top:100px;
+			}
+			#navbar
+			{
+			
+				background-color:#bdd0f0;
+				font-weight:bold;
+				color:white;
+				border-top-left-radius:25px;
+				border-top-right-radius:25px;
+				position:fixed;
+				z-index:1;
+				top:0;
+				width:79.15%;
+				font-size:25px;
+                text-align:right;
+				height:100px;
+				
+			}
+			nav a
+			{
+				display:inline-block;
+				text-align: center;
+				margin:3% 2% 3% 2%;
+				color:#0b0373;	
+				text-decoration:none;
+			}
+			a span:hover{
+				background-color:#0b0373;
+				color:white;
+				border-radius:8px;
+				font-weight:bold;
+				text-transform:uppercase;
+			}
+			#footbar
+			{
+				background-color:#020940;
+				border-bottom-left-radius:25px;
+				border-bottom-right-radius:25px;
+				text-align:center;
+				font-size:15px;
+				color:white;
+				opacity:0.9;
+			}
+			#footbar a
+			{
+				font-size:17px;
+			}
+			#name
+			{
+				float:left;
+				margin-left:2%;
+				font-family: 'Lobster', cursive;
+				font-size:35px;
+				color:orangered;
+				font-weight:normal;
+				text-decoration:underline;
+				text-decoration-color:#430370;
+				text-shadow: 0 0 3px #717874;
+			}
+			.brand
+			{
+				color:#430370;
+				font-family:papyrus;
+			}
+			.big
+			{
+				font-size:35px;
+			}
+			.bullet
+			{
+				list-style-image: url('bullet.png');
+			}
+			.grade
+			{
+				 background: linear-gradient(to right, #f32170, #ff6b08);
+				-webkit-text-fill-color: transparent;
+				-webkit-background-clip: text;
+			}
+			.select
+			{
+				font-weight:bold;
+				color:white;
+				font-family: 'Kaisei Tokumin', serif;
+				font-size:30px;
+				opacity:1;
+			}
+			#over
+			{
+				padding-top:20px;
+				padding-left:80px;
+			}
+			#ddlist
+			{
+				background-color:#a68107;
+				color:white;
+				border-radius:15px;
+				font-weight:bold;
+				height:30px;
+			}
+            .navigate .icon{
+                display:none;
+            }
+            @media screen and (min-width: 950px) and (max-width:1170px){
+                .navigate a:not(:first-child){
+                    display: none;
+                  }
+                .navigate a.icon {
+                    float:right;
+                    display: block;
+                }
+                #navbar
+                {
+                    height:170px;
+                }
+                #content
+                {
+                    height:1100px;
+                    margin-top:170px;
+                }
+				#content p
+				{
+					font-size:16px;
+				}
+				#over
+				{
+					padding-top:20px;
+					padding-left:30px;
+				}
+                #footbar{
+                    font-size:10px;
+                }
+				#footbar a{
+                    font-size:12px;
+                }
+                #name
+                {
+                    float:left;
+                    margin-left:12%;
+                    font-family: 'Lobster', cursive;
+                    font-size:25px;
+                    color:orangered;
+                    font-weight:normal;
+                    text-decoration:underline;
+                    text-decoration-color:#430370;
+                    text-shadow: 0 0 3px #717874;
+                }
+            }
+            @media screen and (min-width: 950px) and (max-width:1170px){
+                .navigate.responsive {position: relative;}
+                .navigate.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    display:none;
+                }
+                .navigate.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: right;
+                }
+            }
+            @media screen and (min-width: 800px) and (max-width:949px){
+                .navigate a:not(:first-child){
+                    display: none;
+                  }
+                .navigate a.icon {
+                    float:right;
+                    display: block;
+                }
+                #navbar
+                {
+                    height:170px;
+                }
+                #content
+                {
+                    height:1050px;
+                    margin-top:170px;
+                }
+				#content p
+				{
+					font-size:13px;
+				}
+				#over
+				{
+					padding-top:20px;
+					padding-left:20px;
+				}
+                #footbar{
+                    font-size:8px;
+                }
+				#footbar a{
+                    font-size:10px;
+                }
+                #name
+                {
+                    float:left;
+                    margin-left:12%;
+                    font-family: 'Lobster', cursive;
+                    font-size:25px;
+                    color:orangered;
+                    font-weight:normal;
+                    text-decoration:underline;
+                    text-decoration-color:#430370;
+                    text-shadow: 0 0 3px #717874;
+                }
+            }
+            @media screen and (min-width: 800px) and (max-width:949px){
+                .navigate.responsive {position: relative;}
+                .navigate.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    display:none;
+                }
+                .navigate.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: right;
+                }
+            }
+			 @media screen and (min-width: 651px) and (max-width:799px){
+                .navigate a:not(:first-child){
+                    display: none;
+                  }
+                .navigate a.icon {
+                    float:right;
+                    display: block;
+                }
+                #navbar
+                {
+                    height:170px;
+                }
+                #content
+                {
+                    height:1050px;
+                    margin-top:170px;
+                }
+				#content p
+				{
+					font-size:11px
+				}
+				#over
+				{
+					padding-top:20px;
+					padding-left:10px;
+				}
+                #footbar{
+                    font-size:8px;
+                }
+				#footbar a{
+                    font-size:10px;
+                }
+                #name
+                {
+                    float:left;
+                    margin-left:12%;
+                    font-family: 'Lobster', cursive;
+                    font-size:25px;
+                    color:orangered;
+                    font-weight:normal;
+                    text-decoration:underline;
+                    text-decoration-color:#430370;
+                    text-shadow: 0 0 3px #717874;
+                }
+            }
+            @media screen and (min-width: 651px) and (max-width:799px){
+                .navigate.responsive {position: relative;}
+                .navigate.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    display:none;
+                }
+                .navigate.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: right;
+                }
+            }
+			@media screen and (min-width: 400px) and (max-width:650px){
+                .navigate a:not(:first-child){
+                    display: none;
+                  }
+                .navigate a.icon {
+                    float:right;
+                    display: block;
+                }
+                #navbar
+                {
+                    height:150px;
+                }
+                #content
+                {
+                    height:1000px;
+                    margin-top:150px;
+                }
+				#content p
+				{
+					font-size:10px
+				}
+				#over
+				{
+					padding-top:20px;
+					padding-left:0px;
+				}
+                #footbar{
+                    font-size:7px;
+                }
+				#footbar a{
+                    font-size:9px;
+                }
+                #name
+                {
+                    float:left;
+                    margin-left:12%;
+                    font-family: 'Lobster', cursive;
+                    font-size:25px;
+                    color:orangered;
+                    font-weight:normal;
+                    text-decoration:underline;
+                    text-decoration-color:#430370;
+                    text-shadow: 0 0 3px #717874;
+                }
+            }
+            @media screen and (min-width: 400px) and (max-width:650px){
+                .navigate.responsive {position: relative;}
+                .navigate.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    display:none;
+                }
+                .navigate.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: right;
+                }
+            }
+		</style>
+        <script type="text/javascript">
+                function submit(){
+                    var reg=document.getElementById("reg").value;
+                    var branch=document.getElementById("branch").value;
+                    if(reg=='R18')
+                    {
+                        if(branch=='CSE')
+                        {
+                             location.assign("r18_cse.html")
+                        }
+                        else if(branch=='IT')
+                        {
+                             location.assign("r18_it.html")
+                        }
+                        else if(branch=='EIE')
+                        {
+                             location.assign("r18_eie.html")
+                        }
+                        else if(branch=='CIVIL')
+                        {
+                             location.assign("r18_civil.html")
+                        }
+                        else if(branch=='MECH')
+                        {
+                             location.assign("r18_mech.html")
+                        }
+                        else if(branch=='EEE')
+                        {
+                             location.assign("r18_eee.html")
+                        }
+                        else if(branch=='ECE')
+                        {
+                             location.assign("r18_ece.html")
+                        }
+						else if(branch=='CB')
+						{
+							alert("Selected branch not existed in R18 regulation");
+						}
+						else if(branch=='DS')
+						{
+							alert("Selected branch not existed in R18 regulation");
+						}
+                        else
+                        {
+                            alert("!!Please Select Branch");
+                        }
+                    }
+                    else if(reg=='R20')
+                    {
+                        if(branch=='CSE')
+                        {
+                             location.assign("r20_cse.html")
+                        }
+                        else if(branch=='IT')
+                        {
+                             location.assign("r20_it.html")
+                        }
+                        else if(branch=='EIE')
+                        {
+                             location.assign("r20_eie.html")
+                        }
+                        else if(branch=='CIVIL')
+                        {
+                             location.assign("r20_civil.html")
+                        }
+                        else if(branch=='MECH')
+                        {
+                             location.assign("r20_mech.html")
+                        }
+                        else if(branch=='EEE')
+                        {
+                             location.assign("r20_eee.html")
+                        }
+                        else if(branch=='ECE')
+                        {
+                             location.assign("r20_ece.html")
+                        }
+						else if(branch=='CB')
+						{
+							location.assign("r20_cb.html")
+						}
+						else if(branch=='DS')
+						{
+							location.assign("r20_ds.html")
+						}
+                        else
+                        {
+                            alert("!!Please Select Branch");
+                        }
+                    }
+                    else
+                    {
+                        alert("!!Please Select Regulation");
+                    }
+                }
+        </script>
+	</head>
+	<body>
+	<div id="main">
+			<div class="navigate" id="navbar">
+				<nav>
+					<img src="btms.png" style="float:left;width:90px;height:90px">
+					<p id="name" style="font-size:35px;">Bec<span class="brand">T</span>est<span class="brand">M</span>aterial<span class="brand">S</span>earch</p>
+					<a href="index.html"><span>Home</span></a>
+					<a href="about.html"><span>About</span></a>
+					<a href="contact_us.html"><span>Contact us</span></a>
+                    <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+				</nav>
+			</div>
+            <script>
+            function myFunction() {
+              var x = document.getElementById("navbar");
+              if (x.className === "navigate") {
+                x.className += " responsive";
+              } else {
+                x.className = "navigate";
+              }
+            }
+            </script>
+			<div id="content">
+				<p style="text-align:center"> <span class="big">B</span>apatla Engineering College build centers of excellence, impart high quality education,<wbr><br>
+				Instill high standards of ethics and professionalism through strategic efforts of our dedicated staff,<br><wbr>
+				Which allows the college to effectively adapt to the ever changing aspects of education.</p>
+				<p style="margin-left:5%;margin-right:5%;color:yellow"><b>Welcome Becians </b>This page contains our college previous question papers of R18 and R20 Regulations.
+					Any one can view question papers by selecting regulation, branch and semester.
+					If any complaints/errors regarding this website please contact our mail .
+					Please support and help us by sharing question papers to our mail.
+					</p>
+					<h1 style="color:black">
+						<center>
+						<img src="crackers.gif"  width="170px" height="140px">
+						<span style="background-color:#b5b5ba">2K Users & 9K Views</span>
+						<img src="crackers.gif"  width="170px" height="140px">
+						</center>
+					</h1>
+				<h1 id="over" style=">"><span class="grade">What's new:</span></h1>
+				<div class="bullet">
+					<img src="bullet.png" style="float:left;" width="50px" height="20px">
+					<p>Sorry we can't post all 3/4 1st sem papers (Feb 2021) but they are available in our college website--<a href="http://www.becbapatla.ac.in/pages/schemes-v-sem-see-regular-feb-2021" style="color:cyan;">click here</a></p>
+					<img src="bullet.png" style="float:left;" width="50px" height="20px">
+					<p>We Specially Thank the following mentioned poeple--
+					<a href="tr.html" style="color:cyan;">click here</a></p>
+					<img src="bullet.png" style="float:left;" width="50px" height="20px">
+					<p>Sorry for Inconvenience with Ads </p>
+					<h3 style="color:yellow"><center>Now Website is Ad FREE</center></h3>
+				</div>
+				<br>
+				<div style="text-align:center;">
+					<span class="select" style="text-align:left">Select Your Regulation</span>
+                    <select id="reg" style="border-radius:25px;background-color:green;color:white;font-size:20px;font-weight:bold">
+                            <option selected disabled hidden>Regulation</option>
+                            <option>R18</option>
+                            <option>R20</option>
+                    </select><br><br>
+                    <span class="select" style="text-align:right;margin-left:30px">Select Your Branch</span>
+                    <select id="branch" style="border-radius:25px;background-color:#c77c04;color:white;font-size:20px;font-weight:bold">
+                        <option selected disabled hidden>Branch</option>
+                        <option>CSE</option>
+                        <option>IT</option>
+                        <option>CIVIL</option>
+                        <option>MECH</option>
+                        <option>EIE</option>
+                        <option>EEE</option>
+                        <option>ECE</option>
+						<option>DS</option>
+                        <option>CB</option>
+                    </select><br><br>
+                    <button type="submit" onclick="submit()" style="background:white;font-size:20px;border-color:#017827;border-radius:25px;border-width:3px;color:black"><b>Submit</b></button>
+				</div>
+				<br>
+				<!-- LikeBtn.com BEGIN -->
+				<span class="likebtn-wrapper" data-theme="drop" data-ef_voting="buzz" data-white_label="true" data-rich_snippet="true"></span>
+				<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+				 <!--LikeBtn.com END -->
+			</div>
+			
+			<div id="footbar">
+			BecTestMaterialSearch is optimized for refering previous question papers and Schemas.<br>
+			<b>References</b>, and Schemas are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content<br><br>
+					<b>Bapatla Engineering College</b><br>
+
+	Phone : 9701527187  |   |  for any queries email to::  <a href="mailto:bectestmaterialsearch.com" style="color:yellow;font-weight:bold;"> bectestmaterialsearch@gmail.com</a>
+				<p style="text-align:center"><a href="btms.png"><img src="btms.png" style="width:120px;height:120px"></a></p>
+			</div>
+		</div>
+	</body>
+</html>
