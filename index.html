@@ -506,24 +506,27 @@
             }
             </script>
 			<script src="confetti.js"></script>
+			<!-- Confetti  JS-->
 			<script>
 
-			  const startit = () => {
-				setTimeout(function () {
-				  console.log("start");
-				  confetti.start();
-				}, 1000);
-			  };
+				// start
 
-			  const stopit = () => {
-				setTimeout(function () {
-				  console.log("stop");
-				  confetti.stop();
-				}, 6000);
-			  };
+				const start = () => {
+					setTimeout(function() {
+						confetti.start()
+					}, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+				};
 
-			  startit();
-			  stopit();
+				//  Stop
+
+				const stop = () => {
+					setTimeout(function() {
+						confetti.stop()
+					}, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+				};
+
+				start();
+				stop();
 			</script>
 			<div id="content">
 				<p style="text-align:center"> <span class="big">B</span>apatla Engineering College build centers of excellence, impart high quality education,<wbr><br>
