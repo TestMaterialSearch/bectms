@@ -505,6 +505,26 @@
               }
             }
             </script>
+			<script src="./confetti.js"></script>
+			<script>
+
+			  const startit = () => {
+				setTimeout(function () {
+				  console.log("start");
+				  confetti.start();
+				}, 1000);
+			  };
+
+			  const stopit = () => {
+				setTimeout(function () {
+				  console.log("stop");
+				  confetti.stop();
+				}, 6000);
+			  };
+
+			  startit();
+			  stopit();
+			</script>
 			<div id="content">
 				<p style="text-align:center"> <span class="big">B</span>apatla Engineering College build centers of excellence, impart high quality education,<wbr><br>
 				Instill high standards of ethics and professionalism through strategic efforts of our dedicated staff,<br><wbr>
@@ -517,7 +537,7 @@
 					<h1 style="color:black">
 						<center>
 						<img src="crackers.gif"  width="170px" height="140px">
-						<span style="background-color:#b5b5ba">2K Users & 9K Views</span>
+						<span style="background-color:#b5b5ba">4K Users & 17K Views</span>
 						<img src="crackers.gif"  width="170px" height="140px">
 						</center>
 					</h1>
